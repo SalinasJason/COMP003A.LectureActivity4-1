@@ -1,4 +1,8 @@
-﻿namespace COMP003A.LectureActivity4_1
+﻿// Author: Jason Salinas
+// Course: COMP003A
+// Faculty: Jonathan Cruz
+// Purpose: Calculate average grades using arrays and lists in C#
+namespace COMP003A.LectureActivity4_1
 {
     internal class Program
     {
