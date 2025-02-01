@@ -32,6 +32,39 @@
                     }
                 }
             }
+
+            // Calculate the average grade
+            double sum = 0;
+            for (int i = 0; i < grades.Length; i++)
+            {
+                sum += grades[i]; // Add the current grade to the total sum for averaging
+            }
+            double average = sum / grades.Length;
+
+            // Display the grades and average
+            Console.WriteLine("\nGrades:");
+            foreach (int grade in grades)
+            {
+                Console.WriteLine(grade); // Display each grade stored in the array
+            }
+            Console.WriteLine($"Average Grade: {average:F2}");
+
+            // Delcare a list to store student
+            List<string> studentNames = new List<string>();
+
+            // Collect student names
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write($"Enter name for student {i + 1}: ");
+                studentNames.Add( Console.ReadLine()); // Add the entered name to the list of student names
+            }
+
+            // Display student names
+            Console.WriteLine("\nStudent Names:");
+            for (int i = 0; i < studentNames.Count; i++)
+            {
+                Console.WriteLine($"Student {i + 1}: {studentNames[i]}"); // Display each student name with their index
+            }
         }
     }
 }
